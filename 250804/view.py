@@ -7,15 +7,21 @@ for test_case in range(1, T+1):
     for i in range(2, N-2):         # 왼/오 양옆 0이므로 2 ~ N-3까지 순회
         h = height_list[i]
         h_max = 0
-        near_list = [height_list[i+j] for j in range(-2,3) if j != 0]
+        near_list = [height_list[i+j] for j in range(-2,3) if j != 0]       ### 가독성이 떨어지는 코드가 될 수 있음.
         print(near_list)
+
+        # 4개 정도는 for문 말고 copy & paste 해도 됨
         for near in near_list:
             if near > h_max:
                 h_max = near
-        if h_max >= h:
-            continue
-        diff = h - h_max
-        cnt += diff
+
+        # if h_max >= h:
+        #     continue
+        # diff = h - h_max
+        # cnt += diff
+        if h > h_max:
+            diff = h - h_max
+            cnt += diff
     print(f"#{test_case} {cnt}")
 
 

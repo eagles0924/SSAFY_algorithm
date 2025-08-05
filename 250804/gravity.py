@@ -22,3 +22,15 @@ for test_case in range(1, T+1):
         if max_col_cnt > max_row_cnt:
             max_row_cnt = max_col_cnt
     print(f"#{test_case} {max_row_cnt}")
+
+# 인덱스 값을 이요
+# 하나의 쌓여있는 상자들의 낙차값
+# 낙하 가능한 최대 거리 계산
+# i = 0
+# for i in range(N):
+    # length = N - 1 - i
+    # for j in range(i+1, N):
+    #     if arr[i] <= arr[j]:
+    #         length -= 1
+    # if ans < length:
+    #     ans = length
