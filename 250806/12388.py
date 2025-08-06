@@ -1,11 +1,14 @@
-import simport sys
-sys.stdin = open(r'12388.txt', 'r')
+import os
+import sys
+
+os.chdir(r"D:\vscode\SSAFY_algorithm\250806")
+sys.stdin = open('12388.txt', 'r')
 
 T = int(input())
 for tc in range(1, T+1):
     N = int(input())
     arr = [list(map(int, input().split())) for _ in range(N)]
-
+    
 
 
 
