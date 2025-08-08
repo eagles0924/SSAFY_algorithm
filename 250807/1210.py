@@ -16,6 +16,7 @@ for tc in range(1, T+1):
     for c in range(100):
         if arr[end_r][c] == 2:
             end_c = c
+            break
     temp_r, temp_c = end_r, end_c
     # dx = [1, 0, -1, 0]
     # dy = [0, 1, 0, -1]

@@ -8,7 +8,7 @@ sys.stdin = open('12392.txt', 'r')
 
 
 def selection_sort(lst: list, n: int):
-    for i in range(n-1):
+    for i in range(n-1):            # 범위의 시작 위치를 만드는 것.
         min_idx = i
         for j in range(i+1, n):
             if lst[min_idx] > lst[j]:
@@ -24,6 +24,7 @@ for tc in range(1, T+1):
     # 선택 정렬 사용하여 오름차순으로 정렬
     order_list = selection_sort(numbers, N)
     answer = list()
+    ####### 추가: 이 부분도 append로 받지 말고 정렬 이용하여 진행.
     for i in range(N//2):
         if len(answer) >= 10:
             break

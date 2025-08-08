@@ -1,0 +1,4 @@
+초기화 후 프로젝트 생성 전에 customize
+
+interpreter - System interpreter (python 3.9로 해도 되지만 역량 테스트 볼 때는 pypy로 ㄱㄱ)
+제출 시 .idea 등 생성되는 파일은 제출 안해도 됨.

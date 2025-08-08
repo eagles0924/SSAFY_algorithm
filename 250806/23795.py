@@ -29,4 +29,4 @@ for tc in range(1, T+1):
                 break
             if arr[nr][nc] == 0:
                 cnt += 1
-    print(f"#{tc} {all - cnt}") 
+    print(f"#{tc} {all - cnt}")
