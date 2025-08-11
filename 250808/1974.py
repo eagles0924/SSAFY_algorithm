@@ -29,3 +29,4 @@ for tc in range(1, T+1):
             check.append(element)
         check = selection_sort(check)
         if check == checklist:
+            pass
