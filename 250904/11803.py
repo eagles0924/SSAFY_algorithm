@@ -8,6 +8,9 @@ sys.stdin = open('11803.txt', 'r')
 
 def backtrack(k, cur_cost, prev):
     global ans
+    print('k: ', k)
+    print('cur_cost: ', cur_cost)
+    print('prev: ', prev)
     if ans <= cur_cost:     # 현재 값이 최솟값보다 커지는 순간 return
         return
     if k == N:
@@ -15,21 +18,19 @@ def backtrack(k, cur_cost, prev):
         if ans > cur_cost:
             ans = cur_cost
         return
-        # cost = 0
-        # for i in range(1, N):
-        #     cost += G[order[i-1]][order[i]]
-        # cost += G[order[N-1]][0]
     else:
         for i in range(N):
             if visited[i]: continue
             visited[i] = 1
+            print(visited)
             backtrack(k + 1, cur_cost + G[prev][i], i)
             visited[i] = 0
+            print('visited: ', visited)
+    print()
 
 T = int(input())
 for tc in range(1, T+1):
     N = int(input())
-    # arr = [list(map(int, input().split())) for _ in range(N)]
     # cases = permutations([i for i in range(1, N)], N-1)   # cases: 모든 경로
     visited = [0] * N
     G = [list(map(int, input().split())) for _ in range(N)]
@@ -38,6 +39,7 @@ for tc in range(1, T+1):
     visited[0] = 1
     backtrack(1, 0, 0)
     print(ans)
+    # print(G)
 
 
 
