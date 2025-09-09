@@ -14,7 +14,7 @@ sys.stdin = open('11806.txt', 'r')
 def run():
     while arr:
 
-    pass
+        pass
 
 
 def triplet():
@@ -33,10 +33,11 @@ for tc in range(1, T+1):
         # player 1에게 먼저 들어오므로 먼저 정렬 후 확인
         p1.append(arr.pop(0)); p1.sort()
         if len(p1) >=3:
-            
+            pass
 
         p2.append(arr.pop(0)); p2.sort()
 
-        
+        pass
+    pass
 
 
