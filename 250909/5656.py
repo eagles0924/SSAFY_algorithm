@@ -28,6 +28,7 @@ def boom(x, y):    # n은 0 ~ W-1까지
     #         point[(r, n)] = arr[r][n]   # 2이상의 값을 가지는 좌표면 저장
 
 # Todo: deepcopy 사용
+# 복사해두고 꺼내서 다시 사용
 def gravity():
     global W, H
     all = []

@@ -17,7 +17,7 @@ sys.stdin = open('11804.txt', 'r')
 #             weights.pop()
 #     return sum(move)
     
-
+# QUEUE
 
 T = int(input())
 for tc in range(1, T+1):
